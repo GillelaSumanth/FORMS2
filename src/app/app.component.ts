@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class AppComponent {
   title = 'forms';
 
-  rows: number = 5; // Number of rows for the triangle
+  rows: number = 6; // Number of rows for the triangle
 
   getTriangleRows(): Array<number> {
     return Array(this.rows).fill(0).map((_, i) => i + 1);
