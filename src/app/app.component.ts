@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FileComponent } from './file/file.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CompanyComponent } from './company/company.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet,FileComponent,CommonModule,MatButtonModule],
+  imports: [ RouterOutlet,FileComponent,CommonModule,MatButtonModule,
+    CompanyComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
