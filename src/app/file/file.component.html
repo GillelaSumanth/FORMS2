@@ -1,0 +1,103 @@
+<form  [formGroup]="UsingClassForm" >
+ <table class="simple" >
+     
+           <th [attr.colspan]="2" class="headstyle" [class.txtright]='true' ><h1> Using Class to get Data </h1></th>
+    
+    
+   <tbody class="bodyStyle">
+        <tr>
+           <td> <label>Aplicant Name:</label></td>
+           <td> <input type="text" id="aname" placeholder="Enter your full name" formControlName="aname"></td>
+        </tr>
+        <tr>
+           <td> <label>Gender:</label></td>
+            <td>
+               <input type="radio" id="g1" value="Male" formControlName="gender">Male
+               <input type="radio" id="g2" value="Female" formControlName="gender">Female
+               <input type="radio" id="g3" value="Others" formControlName="gender">Others
+            </td>
+        </tr>
+        <tr>
+           <td> <label>Enter Mobile Number  :</label></td>
+           <td> <input type="text" id="mno" placeholder="Enter your Mobile no"formControlName="mobileNo"></td>
+        </tr>  
+        <tr>
+           <td> <label>Email:</label></td>
+           <td><input type="email" id="email" placeholder="Enter your email" formControlName="email"></td>
+        </tr>
+        <tr>
+            <td>  <label>Qualifications :</label></td>
+            <td>
+                <select class="selType" formControlName="Qualifications">
+                   <option value=""> ---select---</option>
+                   <option value="SSC"> SSC</option>
+                   <option value="Intermediate">Intermediate</option>
+                   <option value="B.Sc">B.Sc </option>
+                   <option value="M.Sc">M.Sc </option>
+                </select>
+            </td>
+         </tr>
+         <tr>
+             <td>  <label>Hobbies:</label></td>
+             <td> 
+               <input type="checkbox" id="ch1" name="checkbox1 " value="Cricket"formControlName="hobbies">
+            <label for="checkbox1">Playing Cricket</label>
+
+               <input type="checkbox" id="ch2" name="checkbox2" value="Drawing"formControlName="hobbies">
+
+            <label for="checkbox2">Drawing</label>
+    
+                <input type="checkbox" id="ch3" name="checkbox3" value="Books"formControlName="hobbies">
+            <label for="checkbox3">Reading Books</label>
+             </td>
+         </tr>
+         <tr>
+            <td> <label>Select Time:</label></td>
+
+           <td>  <input type="time" name="appointment_time" formControlName="time"></td>
+          </tr>
+          <tr>
+             <td><label>Select Date:</label></td>
+
+             <td><input type="date" name="birthdate" formControlName="date"></td>
+         </tr>
+         <tr>
+            <td><label>Website:</label></td>
+            <td><input type="url" name="website" placeholder="Enter website URL" formControlName="url"></td>
+          </tr>
+          <tr>
+             <td> <label>Quantity:</label></td>
+             <td> <input type="number" name="quantity" min="1" max="10" formControlName="quantity"></td>
+          </tr>
+          <tr>
+            <td> <label>File:</label></td>
+            <td>
+               <input type="file" name="file" formControlName="file">
+            </td>
+          </tr>
+          <tr>
+             <td><label>Message :</label></td>
+            <td>
+               <textarea name="message" placeholder="Enter your message" formControlName="msg"></textarea>
+            </td>
+         </tr>
+         <tr>
+            <td><label>Password:</label></td>
+            <td>
+               <input type="password" name="password" placeholder="Enter your password" formControlName="psw">
+            </td>
+       </tr>
+       <tr>
+           <td> <label>Select Range :</label></td>
+           <td> <input type="range" formControlName="range"></td>
+       </tr>
+       <tr>
+         <td>
+             <button  (click)="onSubmit()">Submit</button>
+             <button  (click)="clear()">Clear</button>
+             <button  (click)="back()">Back</button>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</form>

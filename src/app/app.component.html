@@ -1,0 +1,38 @@
+<!-- 
+<router-outlet></router-outlet>
+<app-file></app-file> -->
+<!-- <style>
+table, td {
+  border: 1px solid black;
+}
+</style> -->
+<!-- <table>
+    <tbody>
+
+        <th [attr.colspan]="2" class="headstyle" [class.txtright]='true' ><h1  >login</h1></th>
+
+        <tr>
+             <td>name</td>
+             <td>salary</td>
+             <td>age</td>
+        </tr>
+        <tr>
+             <td>sumanth</td>
+             <td>2900</td>
+             <td>23</td>
+        </tr>
+
+    </tbody>
+</table> -->
+<!-- <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button disabled>Disabled</button>
+    <button mat-raised-button>Basic</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div> -->
+
+  <div *ngFor="let row of getTriangleRows(); let i = index">
+    <div>
+      <span *ngFor="let star of getTriangleRows().slice(0, i + 1)">&#42;</span>
+    </div>
+  </div>
